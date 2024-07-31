@@ -1,0 +1,142 @@
+body {
+    background-color: #001f3f;
+    color: white;
+  }
+  
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .card {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .correct {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .incorrect {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .score-section {
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #f7f2f2;
+    background-image: linear-gradient(to right, #ccc, #e4dbdb, #f1dbdb);
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  
+  .score-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .score-card .card-text {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .feedback {
+    font-size: 1rem;
+    color: #e90e0e;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .feedback-section {
+    margin-top: 10px;
+  }
+  
+  .timer {
+    font-size: 1.25rem;
+    color: #ffc107;
+    margin-top: 10px;
+  }
+  
+  .review-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #f9f9f9;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .review-item {
+    margin-bottom: 20px;
+  }
+  
+  .review-item .question {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .review-item .option {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.875rem;
+    }
+  
+    .review-wrapper {
+      width: 50%;
+      height: 50%;
+      position: static;
+      box-shadow: none;
+    }
+  }
+  
